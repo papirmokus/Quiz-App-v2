@@ -327,6 +327,9 @@ h1 {
   .game-answers-ul li {
     width:100%;
   }
+  .game-panel {
+    width: 100%;
+  }
 }
 
 
