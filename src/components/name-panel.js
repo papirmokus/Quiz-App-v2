@@ -18,7 +18,7 @@ const NamePanel = (props) => {
         props.cb(formData)
     }
 
-    const errMsg = numberOfQuestions > 0 ? <></> : <p className="err-msg">Legalább egy kérdés szükséges az idításhoz</p>
+    const errMsg = numberOfQuestions > 0 ? <></> : <p className="err-msg">Legalább egy kérdés szükséges az indításhoz</p>
 
     return (
         <form className="name-form">

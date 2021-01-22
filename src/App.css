@@ -63,8 +63,7 @@ h1 {
   .name-form {
     background-color: #27323a;
     color: white;
-    width: 50%;
-    min-width: 380px;
+    width: 60%;
     padding: 2rem;
     margin-top: 4rem;
     display: flex;
@@ -87,6 +86,9 @@ h1 {
     @media only screen and (max-width: 600px) {
     .name-form {
       width: 90%
+    }
+    .name-form input {
+      width: 80%;
     }
     }
     .err-msg {
@@ -321,6 +323,12 @@ h1 {
   cursor: pointer;
 
 }
+@media only screen and (max-width: 600px) {
+  .game-answers-ul li {
+    width:100%;
+  }
+}
+
 
 .game-answers-ul li:disabled {
   opacity: 0.7;
