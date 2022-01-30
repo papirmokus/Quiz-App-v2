@@ -21,7 +21,7 @@ const GamePanel = (props) => {
 
     const questions = useSelector(state => state.questions)
 
-    const sendGuess = (e) => {
+    const sendGuess = () => {
         if (currentIndex > questions.length - 2) {
             setExistsNext(false)
         }
@@ -69,14 +69,14 @@ const GamePanel = (props) => {
                 className="game-button"
             >
                 Küldés
-                </button>
+            </button>
             <button
                 onClick={toggleNext}
                 disabled={!existsNext || !answered}
                 className="game-button"
             >
                 Tovább
-                </button>
+            </button>
         </> : <p>Elfogytak a kérdések! A végső pontszám: {playerScore}</p>
 
     return (

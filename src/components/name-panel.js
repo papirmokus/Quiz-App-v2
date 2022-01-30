@@ -34,7 +34,7 @@ const NamePanel = (props) => {
                 onClick={handleSubmit}
                 disabled={numberOfQuestions < 1}
             >
-                <img src="/images/btnstart.png" alt="" height="60px"></img>
+                <img src="/images/btnstart.png" alt="" height="30px"></img>
             </button>
             {errMsg}
         </form>

@@ -7,6 +7,26 @@
 body {
   background-image: url("./background.png");
 }
+h1 {
+  color:white;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+      
+input {
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: box-shadow 0.2s ease;
+}
+input:focus-visible {
+  box-shadow: 0 0 2px 2px #000, 0 0 0px 4px #FFF;
+}
 
 .header-bar {
   width: 100%;
@@ -21,10 +41,6 @@ body {
   justify-content: center;
   margin: 0;
 }
-h1 {
-  color:white;
-}
-
 
 .main-nav-item{
   font-family:'Roboto',sans-serif;
@@ -79,9 +95,9 @@ h1 {
     }
     .name-form input {
       width: 50%;
-      height: 30px;
       margin:auto;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      padding: 4px 8px;
     }
     @media only screen and (max-width: 600px) {
     .name-form {
@@ -97,28 +113,34 @@ h1 {
       color: red !important;
     }
     .start-button {
-      width: 90px;
-      height: 90px;
-      
+      width: 70px;
+      height: 70px;
       margin:auto;
       margin-top: 1rem;
-      color: white;
-      font-weight: 600;
       outline: none;
       border:none;
       background-color: #29A19C;
-      border-radius: 45px;
-      box-shadow: 4px 4px 3px #262d2e;
-
+      border-radius: 50%;
+      box-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+      transition: all 0.2s ease;
     }
     .start-button:hover {
-      background-color: #29928f;
+      background-color: #278380;
+      box-shadow: 4px 6px 3px rgba(0,0,0,0.2);
+    }
+    .start-button:focus-visible {
+      background-color: #278380;
+      box-shadow: 4px 6px 3px rgba(0,0,0,0.2);
     }
     .start-button:active {
       background-color: #217774;
     }
+    .start-button:disabled{
+      background-color: #303030;
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   
-
 
 .question-manager{
   display: flex;
@@ -219,6 +241,7 @@ h1 {
       height: 30px;
       margin-bottom: 15px;
       background-color: #d6d6d6;
+      margin-top: 4px;
     }
 
     .save-button{
@@ -307,7 +330,8 @@ h1 {
 
 .game-answers p {
   color:white;
-  padding: 0.7rem;
+  padding: 0.7rem ;
+  padding-left: 0;
 }
 .game-answers-ul{
   list-style-type: none;
